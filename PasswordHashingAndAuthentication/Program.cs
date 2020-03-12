@@ -9,10 +9,9 @@ namespace PasswordHashingAndAuthentication
         {
             try
             {
-
-
                 Menu menu = new Menu();
                 Console.WriteLine(menu.PrintMenu());
+                Console.SetCursorPosition(20, 9);
                 menu.MenuOptions(Console.ReadLine());
             }
             catch (Exception ex)
